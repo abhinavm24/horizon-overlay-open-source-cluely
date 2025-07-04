@@ -95,7 +95,7 @@ class AuthManager: NSObject {
     func startAuthFlow() {
         // Build the callback URL using the custom scheme that the app is registered for.
         // The web application will invoke this URL once authentication is complete.
-        let callbackURL = "constellahorizon://open"
+        let callbackURL = "bub://open"
         let encodedCallback = callbackURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
         let authURL = "https://onhorizon.ai/auth?fromHorizon=true&callback=\(encodedCallback)"
         
@@ -157,8 +157,8 @@ class AuthManager: NSObject {
         guard let urlString = event.paramDescriptor(forKeyword: keyDirectObject)?.stringValue,
               let url = URL(string: urlString) else { return }
         
-        // Handle constellahorizon:// URL scheme
-        if url.scheme == "constellahorizon" {
+        // Handle bub:// URL scheme
+        if url.scheme == "bub" {
             let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
             let queryItems = components?.queryItems ?? []
             

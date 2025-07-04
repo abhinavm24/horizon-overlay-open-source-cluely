@@ -508,11 +508,14 @@ struct FloatingOnboarding: View {
             onShortcutAdjust: {
                 if currentStep == .aiAssist {
                     showShortcutAdjustment = true
-                } else if currentStep == .connectAccount {
-                    // Start the authentication flow. The onboarding will advance automatically
-                    // once the callback is received (see .authCallbackReceived observer below).
-                    AuthManager.shared.startAuthFlow()
-                } else {
+                }
+// disable forced signup
+//                else if currentStep == .connectAccount {
+//                    // Start the authentication flow. The onboarding will advance automatically
+//                    // once the callback is received (see .authCallbackReceived observer below).
+//                    AuthManager.shared.startAuthFlow()
+//                }
+                else {
                     advanceToNextStep()
                 }
             },
