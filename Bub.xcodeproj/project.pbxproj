@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B910CCE92E16CFED00B96EA3 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = B910CCE82E16CFED00B96EA3 /* Sparkle */; };
+		B910CD892E16D81300B96EA3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B910CD882E16D81300B96EA3 /* Lottie */; };
+		B910CD8C2E16D8BE00B96EA3 /* Down in Frameworks */ = {isa = PBXBuildFile; productRef = B910CD8B2E16D8BE00B96EA3 /* Down */; };
+		B910CD8F2E16D94900B96EA3 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = B910CD8E2E16D94900B96EA3 /* SwiftUIIntrospect */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B910CCBE2E16CC6B00B96EA3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B910CCE92E16CFED00B96EA3 /* Sparkle in Frameworks */,
+				B910CD892E16D81300B96EA3 /* Lottie in Frameworks */,
+				B910CD8C2E16D8BE00B96EA3 /* Down in Frameworks */,
+				B910CD8F2E16D94900B96EA3 /* SwiftUIIntrospect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +123,10 @@
 			);
 			name = Bub;
 			packageProductDependencies = (
+				B910CCE82E16CFED00B96EA3 /* Sparkle */,
+				B910CD882E16D81300B96EA3 /* Lottie */,
+				B910CD8B2E16D8BE00B96EA3 /* Down */,
+				B910CD8E2E16D94900B96EA3 /* SwiftUIIntrospect */,
 			);
 			productName = Bub;
 			productReference = B910CCAF2E16CC6900B96EA3 /* Bub.app */;
@@ -195,6 +210,12 @@
 			);
 			mainGroup = B910CCA62E16CC6800B96EA3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B910CCE72E16CF8100B96EA3 /* XCRemoteSwiftPackageReference "Sparkle" */,
+				B910CD872E16D81300B96EA3 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				B910CD8A2E16D8BE00B96EA3 /* XCRemoteSwiftPackageReference "Down" */,
+				B910CD8D2E16D94900B96EA3 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B910CCB02E16CC6900B96EA3 /* Products */;
 			projectDirPath = "";
@@ -551,6 +572,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B910CCE72E16CF8100B96EA3 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+		B910CD872E16D81300B96EA3 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+		B910CD8A2E16D8BE00B96EA3 /* XCRemoteSwiftPackageReference "Down" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnxnguyen/Down";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		B910CD8D2E16D94900B96EA3 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B910CCE82E16CFED00B96EA3 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B910CCE72E16CF8100B96EA3 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+		B910CD882E16D81300B96EA3 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B910CD872E16D81300B96EA3 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		B910CD8B2E16D8BE00B96EA3 /* Down */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B910CD8A2E16D8BE00B96EA3 /* XCRemoteSwiftPackageReference "Down" */;
+			productName = Down;
+		};
+		B910CD8E2E16D94900B96EA3 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B910CD8D2E16D94900B96EA3 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B910CCA72E16CC6800B96EA3 /* Project object */;
 }
